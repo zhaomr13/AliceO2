@@ -19,9 +19,9 @@ using namespace o2::framework;
 struct PythonTask {
   void init(InitContext& ic)
   {
-     Py_Initialize(); 
-     PyRun_SimpleString("print('hello world')\n");
-     Py_Finalize();
+    Py_Initialize();
+    PyRun_SimpleString("print('hello world')\n");
+    Py_Finalize();
   }
 };
 
